@@ -1,0 +1,8 @@
+development:
+  password: shptka_6e7cc6d982e25364435583dfe4cd4dd7
+  theme_id: "130135752916"
+  store: ex-development-store.myshopify.com
+  ignore_files:
+    - "*.gif"
+    - "*.jpg"
+    - config/settings_data.json
