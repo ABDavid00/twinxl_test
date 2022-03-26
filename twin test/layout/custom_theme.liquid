@@ -248,93 +248,14 @@
     <meta name="theme-color" content="#ffffff">
         
     <script src="//www.shopperapproved.com/widgets/testimonial/3.0/14622.js" type="text/javascript"></script><script async="" src="https://script.hotjar.com/modules.7d3f952308caf42c2b67.js" charset="utf-8"></script><style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style><script src="//www.shopperapproved.com/page/js/jquery.noconflict.js" type="text/javascript"></script><link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto"><style type="text/css">.sa_rounded .sa_review { -moz-border-radius: 10px !important; -webkit-border-radius: 10px !important; -khtml-border-radius: 10px !important; border-radius: 10px !important; } .sa_topborder .sa_review { border-width: 1px 0 0 0 !important; } .sa_noborder .sa_review { border-width: 0 !important; } .sa_bgWhite .sa_review { background-color: #ffffff; } .sa_bgBlack .sa_review { background-color: #000000; } .sa_bgBlue .sa_review { background-color: #012847; } .sa_bgGray .sa_review { background-color: #ebebeb; } .sa_bgRed .sa_review { background-color: #780001; } .sa_bgGreen .sa_review { background-color: #185a1c; } .sa_bgGold .sa_review { background-color: #b77105; } .sa_colorWhite .sa_review { color: #ffffff; } .sa_colorBlack .sa_review { color: #000000; } .sa_colorBlue .sa_review { color: #012847; } .sa_borderWhite .sa_review { border: #ffffff solid 1px; } .sa_borderBlack .sa_review { border: #000000 solid 1px; } .sa_borderBlue .sa_review { border: #012847 solid 1px; } .sa_borderGray .sa_review { border: #ebebeb solid 1px; } .sa_displayname { font-weight: bold; padding-right: .5em; } .sa_info { width: 150px; font-size: 14px; padding: 0 12px 12px 0; overflow: hidden; } .sa_name { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } .sa_wide .sa_name { white-space: inherit; overflow: auto; text-overflow: none; } .sa_comments { background-color: inherit; overflow: hidden; position: relative; line-height: 1.2em; padding: 0 !important; } .sa_comments:before { background-color: inherit; bottom: 0; position: absolute; right: 0; content: '\2026'; } .sa_comments:after{ content: ''; background-color: inherit; position: absolute; height: 100px; width: 100%; z-index: 1; } .sa_wide .sa_info { float: left; height: 90px; } .sa_wide .sa_comments { text-align: left; } .sa_review { clear: both; padding: 1em !important; height: 160px; overflow: hidden; margin: 2px; cursor: pointer; } .sa_review span { display: inline !important; } .sa_review span.sa_star { display: inline-block !important; } .sa_wide .sa_review { height: auto; overflow: auto; } .sa_star { cursor:pointer; /*background: url("https://www.shopperapproved.com/widgets/widgetstar.png") no-repeat;*/ background: url("https://www.shopperapproved.com/thankyou/simplestar.png") no-repeat; width: 24px; height: 24px; display: inline-block !important; padding-right: 4px; } .sa_activestar { background-position: 0 -24px; } .sa_date { display: none; } .sa_showdate .sa_date { display: block !important; } .sa_narrow { font-size: 11px !important; } .sa_narrow .sa_review { height: 130px; } .sa_narrow .sa_name { font-size: 12px !important; width: 120px !important; } .sa_narrow .sa_date { font-size: 12px !important; width: 120px !important; } /*.sa_narrow .sa_star { background: url("https://www.shopperapproved.com/widgets/widgetstar-small.png") no-repeat !important; width: 18px !important; height: 18px !important; }*/ .sa_narrow .sa_star { background-image: url("https://www.shopperapproved.com/thankyou/simplestar.png") !important; background-repeat: no-repeat !important; transform: scale(.75) !important; width: 26px !important; height: 30px !important; background-size: cover !important; background-position: 0 0; } .sa_narrow .sa_activestar { background-position: 0 -30px !important; } .sa_review120 .sa_review { height: 120px; } .sa_review95 .sa_review { height: 95px; } .sa_hidelocation .sa_location { display: none !important; } .sa_hideimage .sa_widget_footer { display: none !important; } .sa_temp { height: auto !important; overflow: visible !important; } .sa_wide.sa_narrow .sa_review { height: 50px; } .sa_wide.sa_narrow .sa_info { height: 35px; } .sa_wide.sa_narrow .sa_comments { } .sa_table { border: 0; background-color: inherit; } .sa_table tr { background-color: inherit; } .sa_table td { border: 0; background-color: inherit; } .sa_left { width: 150px; vertical-align: top; } .sa_right { vertical-align: top; } .sa_flex .sa_info,.sa_flex .sa_comments,.sa_flex .sa_review { height: auto !important; } .shopperapproved_widget table td { padding: 0 !important; }</style>
-    <script type="text/javascript">
-        var sa_interval = 5000;
-        function saLoadScript(src) { 
-            var js = window.document.createElement('script'); 
-                js.src = src; 
-                js.type = 'text/javascript'; 
-            document.getElementsByTagName("head")[0].appendChild(js); 
-        } 
-        if (typeof(shopper_first) == 'undefined') saLoadScript('//www.shopperapproved.com/widgets/testimonial/3.0/14622.js'); shopper_first = true; 
-    </script>
   {{ content_for_header }} <!-- Header hook for plugins -->
   {{ 'application.css' | asset_url | stylesheet_tag }}
   {{ 'application.js' | asset_url | script_tag }}
 </head>
 
 <body>
-
-    {% section 'header' %}
-    {% section 'slideout' %}
-
-    <script type="text/javascript">
-        var c = document.body.className;
-        c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
-        document.body.className = c;
-    </script>
-    <script type="text/javascript" src="https://twinxl.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.70" id="jquery-blockui-js"></script>
-<script type="text/javascript" id="wc-add-to-cart-js-extra">
-/* <![CDATA[ */
-var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/twinxl.com\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
-/* ]]> */
-</script>
-<script type="text/javascript" src="https://twinxl.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=4.5.2" id="wc-add-to-cart-js"></script>
-<script type="text/javascript" src="https://twinxl.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4" id="js-cookie-js"></script>
-<script type="text/javascript" id="woocommerce-js-extra">
-/* <![CDATA[ */
-var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
-/* ]]> */
-</script>
-<script type="text/javascript" src="https://twinxl.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=4.5.2" id="woocommerce-js"></script>
-<script type="text/javascript" id="wc-cart-fragments-js-extra">
-/* <![CDATA[ */
-var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_83163ead8532b8f7e02b161f95e0f7c6","fragment_name":"wc_fragments_83163ead8532b8f7e02b161f95e0f7c6","request_timeout":"5000"};
-/* ]]> */
-</script>
-<script type="text/javascript" src="https://twinxl.com/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=4.5.2" id="wc-cart-fragments-js"></script>
-<script type="text/javascript" src="https://twinxl.com/wp-content/plugins/woocommerce/assets/js/jquery-payment/jquery.payment.min.js?ver=3.0.0" id="jquery-payment-js"></script>
-<script type="text/javascript" id="sv-wc-payment-gateway-payment-form-v5_8_1-js-extra">
-/* <![CDATA[ */
-var sv_wc_payment_gateway_payment_form_params = {"card_number_missing":"Card number is missing","card_number_invalid":"Card number is invalid","card_number_digits_invalid":"Card number is invalid (only digits allowed)","card_number_length_invalid":"Card number is invalid (wrong length)","cvv_missing":"Card security code is missing","cvv_digits_invalid":"Card security code is invalid (only digits are allowed)","cvv_length_invalid":"Card security code is invalid (must be 3 or 4 digits)","card_exp_date_invalid":"Card expiration date is invalid","check_number_digits_invalid":"Check Number is invalid (only digits are allowed)","check_number_missing":"Check Number is missing","drivers_license_state_missing":"Drivers license state is missing","drivers_license_number_missing":"Drivers license number is missing","drivers_license_number_invalid":"Drivers license number is invalid","account_number_missing":"Account Number is missing","account_number_invalid":"Account Number is invalid (only digits are allowed)","account_number_length_invalid":"Account number is invalid (must be between 5 and 17 digits)","routing_number_missing":"Routing Number is missing","routing_number_digits_invalid":"Routing Number is invalid (only digits are allowed)","routing_number_length_invalid":"Routing number is invalid (must be 9 digits)"};
-/* ]]> */
-</script>
-<script type="text/javascript" src="https://twinxl.com/wp-content/plugins/woocommerce-gateway-authorize-net-cim/vendor/skyverge/wc-plugin-framework/woocommerce/payment-gateway/assets/js/frontend/sv-wc-payment-gateway-payment-form.min.js?ver=5.8.1" id="sv-wc-payment-gateway-payment-form-v5_8_1-js"></script>
-<script type="text/javascript" src="https://twinxl.com/wp-content/plugins/woocommerce-gateway-authorize-net-cim/assets/js/frontend/wc-authorize-net-cim.min.js?ver=3.3.1" id="wc-authorize-net-cim-js"></script>
-<script type="text/javascript" src="https://twinxl.com/wp-content/themes/twinxl/js/wow.min.js?ver=5.9.2" id="animations-js"></script>
-<script type="text/javascript" src="https://twinxl.com/wp-content/themes/twinxl/js/svgxuse.min.js?ver=5.9.2" id="svgxuse-js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.6.0/slick/slick.min.js?ver=5.9.2" id="slick-slider-js"></script>
-<script type="text/javascript" src="//cdn.rawgit.com/noelboss/featherlight/1.7.12/release/featherlight.min.js?ver=5.9.2" id="lightbox-js"></script>
-<script type="text/javascript" src="https://twinxl.com/wp-content/themes/twinxl/js/functions.js?ver=5.9.2" id="functions-js"></script>
-<script type="text/javascript" src="https://twinxl.com/wp-includes/js/underscore.min.js?ver=1.13.1" id="underscore-js"></script>
-<script type="text/javascript" id="wp-util-js-extra">
-/* <![CDATA[ */
-var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
-/* ]]> */
-</script>
-<script type="text/javascript" src="https://twinxl.com/wp-includes/js/wp-util.min.js?ver=5.9.2" id="wp-util-js"></script>
-<script type="text/javascript" id="woo-variation-swatches-js-extra">
-/* <![CDATA[ */
-var woo_variation_swatches_options = {"is_product_page":""};
-/* ]]> */
-</script>
-<script type="text/javascript" src="https://twinxl.com/wp-content/plugins/woo-variation-swatches/assets/js/frontend.min.js?ver=1.0.85" id="woo-variation-swatches-js"></script>
-<!-- WooCommerce JavaScript -->
-<script type="text/javascript">
-jQuery(function($) { 
-
-                    $( '.add_to_cart_button:not(.product_type_variable, .product_type_grouped)' ).click( function() {
-                        ga( 'ec:addProduct', {'id': ($(this).data('product_sku')) ? ($(this).data('product_sku')) : ('#' + $(this).data('product_id')),'quantity': $(this).data('quantity')} );
-                        ga( 'ec:setAction', 'add' );
-                        ga( 'send', 'event', 'UX', 'click', 'add to cart' );
-                    });
-                
-
-ga( 'send', 'pageview' ); 
- });
-</script>
-    
-<iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="https://vars.hotjar.com/box-acca23410e696f2ca3087d947271c3d0.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe>
+    THIS IS A CUSTOM LAYOUT
+    {% section 'header-test' %}
 
   <main role="main">
     {{ content_for_layout }}
