@@ -1,17 +1,22 @@
 <!doctype html>
 <html>
 <head>
-  <title>Home - Twin XL</title>
+    {% if page.url == null %}
+        <title>Home - Twin XL</title>
+    {% else %}
+        <title>{{ page.title }} - Twin XL</title>
+    {% endif %}
+
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="max-image-preview:large">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-  <link rel="canonical" href="https://twinxl.com/">
+  <link rel="canonical" href="{{ shop.url }}">
   <meta property="og:locale" content="en_US">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Home - Twin XL">
-  <meta property="og:url" content="https://twinxl.com/">
+  <meta property="og:url" content="{{ shop.url }}">
   <meta property="og:site_name" content="Twin XL">
   <meta property="article:modified_time" content="2020-12-02T15:49:56+00:00">
   <meta name="twitter:card" content="summary_large_image">
@@ -266,7 +271,7 @@
 <body>
 
     {% section 'header' %}
-    {% section 'slideout' %}
+    
 
     <script type="text/javascript">
         var c = document.body.className;
@@ -339,5 +344,7 @@ ga( 'send', 'pageview' );
   <main role="main">
     {{ content_for_layout }}
   </main>
+  {% render 'footer' %}
+
 </body>
 </html>
