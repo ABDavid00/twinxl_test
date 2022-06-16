@@ -1,3 +1,4 @@
+
 img.wp-smiley,
 img.emoji {
     display: inline !important;
@@ -18,7 +19,6 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 .variable-item:not(.radio-variable-item) { width : 30px; height : 30px; } .wvs-style-squared .button-variable-item { min-width : 30px; } .button-variable-item span { font-size : 16px; }
 
 .site-logo {
-    /*background-image: url(/img/svg/cedarcreek_logo.svg#logo)*/
     background-image: url(https://twinxl.com/wp-content/themes/twinxl/img/svg/twinxl_logo.svg#logo)
 }
 #header.fixed .site-logo {
@@ -502,3 +502,215 @@ p.add_to_cart_inline {
         margin: 0 10%;
     }
 }
+
+.shopify-challenge__button {
+    position: relative;
+    display: inline-block;
+    padding: 15px 20px;
+    margin: 1em 0;
+    font-size: .9em;
+    color: #ffffff;
+    font-weight: 400;
+    letter-spacing: .4px;
+    line-height: 1em;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none !important;
+    text-shadow: none;
+    border: none;
+	border-radius: 3px;
+    background-color: #1b3564;
+    transition: all .1s ease-in-out;
+}
+
+.first-name, .last-name, .phone, .email, .order-number, .message {
+    margin-bottom: 10px;
+}
+
+.message-text, .first-name-text, .last-name-text, .phone-text, .email-text, .order-number-text {
+    margin-bottom: 5px;
+}
+
+/* ul {
+    list-style: none;
+}
+
+li {
+    display: inline;
+}
+
+li.product {
+    padding-bottom: 30px;
+    text-align: center;
+    margin: 0 3.8% 2.992em 0; 
+}*/
+
+
+/* .container-small {
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+} */
+
+div.products {
+    width: 30.75%;
+    padding-bottom: 30px;
+    text-align: center;
+    margin: 0 3.8% 2.992em 0;
+}
+
+.col, .col-1, .col-2, .col-6, .col-md-4, .col-3, .col-md-3 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+
+.col-2 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+}
+.col-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.col-md-4 {
+    -ms-flex: 0 0 33.333333%;
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%;
+}
+.col-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+.col-md-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+.col-1 {
+    -ms-flex: 0 0 8.333333%;
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%;
+}
+
+.woocommerce-loop-product__title {
+    text-transform: none;
+    font-size: 1em;
+    font-weight: 600;
+    padding-top: 0;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1140px;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    justify-content: normal;
+}
+
+#shopper-approved-product-reviews {
+    margin: 30px 0 20px;
+    padding: 30px 0;
+    }
+    #shopper_review_page {
+    display: flex;
+    padding: 0;
+    }
+    #shopper_review_page #review_image {
+    display: none;
+    }
+    
+    /* Reviews Header (LEFT)*/
+    #shopper_review_page #review_header {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: 0 10% 0 0;
+    border: none;
+    }
+    #shopper_review_page div.merchantheader {
+    display: none;
+    }
+    #review_header .overall {
+    display: none;
+    }
+    #review_header .stars {
+    order: 0;
+    margin: 20px 0;
+    height: auto;
+    }
+    #review_header .stars .desc {
+    font-size: .6em;
+    text-align: left;
+    font-weight: 100;
+    margin-bottom: 10px;
+    }
+    #review_header .graph {
+    order: 1;
+    margin: 10px 0 30px;
+    }
+    #review_header .percentage {
+    order: 2;
+    margin: 0;
+    text-align: left;
+    line-height: 1.4em;
+    width: 100%;
+    height: auto;
+    color: #1b3564;
+    }
+    #sa_review_section {
+    min-height: unset !important;
+    }
+    
+    /* Reviews (RIGHT)*/
+    #shopper_review_page #product_page {
+    width: 80%;
+    }
+    .product_review {
+    border-color: #eeeeee;
+    }
+    .product_review .comments {
+    padding-top: 20px;
+    }
+    #product_page #sa_sort {
+    display: none;
+    }
+    @media screen and (max-width: 980px) {
+    #shopper_review_page {
+    display: block;
+    }
+    #shopper_review_page #review_header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 0 20px 0;
+    }
+    #shopper_review_page #product_page {
+    width: 100%;
+    }
+    }

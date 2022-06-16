@@ -1,8 +1,11 @@
 {% paginate search.results by 10 %}
-  <form action="/search" method="get" role="search">
-    <input type="search" name="q" value="{{ search.terms | escape }}">
-    <button type="submit">search</button>
-  </form>
+<div class="container">
+  <main id="content" role="main" style="min-height: 110.812px;">
+      <header class="header">
+  <h1 class="entry-title">Search Results for: {{ search.terms }}</h1>
+  </header>
+    </main>
+</div>
 
   {% if search.performed %}
     {% for item in search.results %}
@@ -14,7 +17,6 @@
       <h5>{{ item.title | link_to: item.url }}</h5>
       <p>{{ item.content | strip_html | truncatewords: 50 }}</p>
     {% else %}
-      no results
     {% endfor %}
   {% endif %}
 

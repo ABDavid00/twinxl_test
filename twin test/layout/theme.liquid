@@ -1,10 +1,23 @@
 <!doctype html>
 <html>
 <head>
-    {% if page.url == null %}
-        <title>Home - Twin XL</title>
+    {%- comment -%}
+    {% if template.name == "404" %}
+        <title>Page not found - {{ shop.name }}</title>
+    {% elsif page.url == null %}
+        <title>Home - {{ shop.name }}</title>
     {% else %}
-        <title>{{ page.title }} - Twin XL</title>
+        <title>{{ page.title }} - {{ shop.name }}</title>
+    {% endif %}
+    {%- endcomment -%}
+    {% if page.url != null %}
+        <title>{{ page.title }} - {{ shop.name }}</title>
+    {% elsif template.name == "404" %}
+        <title> Page not found - {{ shop.name }}</title>
+    {% elsif collection.url != null %}
+        <title>{{ collection.title }} Archives - {{ shop.name }}</title>        
+    {% else %}
+        <title>Home - {{ shop.name }}</title>            
     {% endif %}
 
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -12,14 +25,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="max-image-preview:large">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-  <link rel="canonical" href="{{ shop.url }}">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Home - Twin XL">
-  <meta property="og:url" content="{{ shop.url }}">
-  <meta property="og:site_name" content="Twin XL">
+  {% include 'social-meta-tags' %}
   <meta property="article:modified_time" content="2020-12-02T15:49:56+00:00">
-  <meta name="twitter:card" content="summary_large_image">
   <script type="text/javascript" async="" src="https://www.google-analytics.com/plugins/ua/ec.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/plugins/ua/linkid.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-NBSKF8D"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://twinxl.com/#website","url":"https://twinxl.com/","name":"Twin XL","description":"Twin XL Sheets, Bedding, Comforters, Blankets, Mattress Pads","potentialAction":[{"@type":"SearchAction","target":"https://twinxl.com/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"WebPage","@id":"https://twinxl.com/#webpage","url":"https://twinxl.com/","name":"Home - Twin XL","isPartOf":{"@id":"https://twinxl.com/#website"},"datePublished":"2019-06-19T18:49:06+00:00","dateModified":"2020-12-02T15:49:56+00:00","inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://twinxl.com/"]}]}]}</script>
   <meta name="p:domain_verify" content="ea5bd77d0e2b6a9e432c5d3f1638bec7">
   <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
@@ -153,7 +160,7 @@
     <link rel="stylesheet" id="google-fonts-css" href="https://fonts.googleapis.com/css?family=Montserrat%3A400%2C600&amp;display=swap&amp;ver=5.9.2" type="text/css" media="all">
     <link rel="stylesheet" id="animations-css" href="https://twinxl.com/wp-content/themes/twinxl/css/animate.css?ver=5.9.2" type="text/css" media="all">
     <link rel="stylesheet" id="icons8-css" href="https://twinxl.com/wp-content/themes/twinxl/icons8/css/styles.css?ver=5.9.2" type="text/css" media="all">
-    <link rel="stylesheet" id="main-styles-css" href="https://twinxl.com/wp-content/themes/twinxl/style.css?ver=5.9.2" type="text/css" media="all">
+    {{ 'style.css' | asset_url | stylesheet_tag }}
     <link rel="stylesheet" id="woo-variation-swatches-css" href="https://twinxl.com/wp-content/plugins/woo-variation-swatches/assets/css/frontend.min.css?ver=1.0.85" type="text/css" media="all">
     <style id="woo-variation-swatches-inline-css" type="text/css">
     .variable-item:not(.radio-variable-item) { width : 30px; height : 30px; } .wvs-style-squared .button-variable-item { min-width : 30px; } .button-variable-item span { font-size : 16px; }
